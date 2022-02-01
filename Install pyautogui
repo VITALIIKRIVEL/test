@@ -1,0 +1,129 @@
+root@deb11:/home/compacs/Cmp7Data/Automation_test# pip install pyautogui
+Collecting pyautogui
+  Downloading PyAutoGUI-0.9.53.tar.gz (59 kB)
+     |████████████████████████████████| 59 kB 489 kB/s 
+Collecting PyTweening>=1.0.1
+  Downloading pytweening-1.0.4.tar.gz (14 kB)
+Collecting mouseinfo
+  Downloading MouseInfo-0.1.3.tar.gz (10 kB)
+Collecting pygetwindow>=0.0.5
+  Downloading PyGetWindow-0.0.9.tar.gz (9.7 kB)
+Collecting pymsgbox
+  Downloading PyMsgBox-1.0.9.tar.gz (18 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+    Preparing wheel metadata ... done
+Collecting pyscreeze>=0.1.21
+  Downloading PyScreeze-0.1.28.tar.gz (25 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+    Preparing wheel metadata ... done
+Collecting python3-Xlib
+  Downloading python3-xlib-0.15.tar.gz (132 kB)
+     |████████████████████████████████| 132 kB 1.9 MB/s 
+Collecting pyrect
+  Downloading PyRect-0.1.4.tar.gz (15 kB)
+Collecting pyperclip
+  Downloading pyperclip-1.8.2.tar.gz (20 kB)
+Building wheels for collected packages: pyautogui, pygetwindow, pyscreeze, PyTweening, mouseinfo, pymsgbox, pyperclip, pyrect, python3-Xlib
+  Building wheel for pyautogui (setup.py) ... done
+  Created wheel for pyautogui: filename=PyAutoGUI-0.9.53-py3-none-any.whl size=36588 sha256=37b1dc8eb672bd7dbf32c55b7a283189190e21a0b7586f3a3b2282fa5c028344
+  Stored in directory: /root/.cache/pip/wheels/d8/97/e4/d2edca92a87d3b5fbfb527264750a17b4ba297b9a7cab6e67f
+  Building wheel for pygetwindow (setup.py) ... done
+  Created wheel for pygetwindow: filename=PyGetWindow-0.0.9-py3-none-any.whl size=11082 sha256=31faf86147653793112af26c618847aafaafdc0c5fc2fa59f16de2aa39989002
+  Stored in directory: /root/.cache/pip/wheels/44/ab/20/423c3a444793767e4e41f8377bc902f77bee212e68dcce85a5
+  Building wheel for pyscreeze (PEP 517) ... done
+  Created wheel for pyscreeze: filename=PyScreeze-0.1.28-py3-none-any.whl size=13021 sha256=06772b4122706ca4ebe23577a1011e1b681af3e3e4cb52ec5a4563c9f4b5a7ff
+  Stored in directory: /root/.cache/pip/wheels/a2/5b/86/99f1d8fac5d92de0ccb3f0d4ad15e3f4278baf75a9b0f20b93
+  Building wheel for PyTweening (setup.py) ... done
+  Created wheel for PyTweening: filename=pytweening-1.0.4-py3-none-any.whl size=5824 sha256=a63655522555e4df16f9fc81bc72d926ba6e2e0ebb41da435911dfd680cebbb5
+  Stored in directory: /root/.cache/pip/wheels/a4/5d/d2/ba4c8f82163233ffaadcf383c1e34d7d92635d357d13e7b78d
+  Building wheel for mouseinfo (setup.py) ... done
+  Created wheel for mouseinfo: filename=MouseInfo-0.1.3-py3-none-any.whl size=10906 sha256=472345ca1a9f33dc2bb5ecf5c7f5b8ba9d2e950ef13e278342768f36c41afc80
+  Stored in directory: /root/.cache/pip/wheels/61/73/b9/6fb1131ab36e650206e3aa0ad7a68907b41b32ac2d4f75f543
+  Building wheel for pymsgbox (PEP 517) ... done
+  Created wheel for pymsgbox: filename=PyMsgBox-1.0.9-py3-none-any.whl size=7420 sha256=310518b654428fa39a0faddd5348415ee47da2ff2127071a5f164e4242d2f2e9
+  Stored in directory: /root/.cache/pip/wheels/7f/13/8c/584c519464297d9637f9cd29fd1dcdf55e2a2cab225c76a2db
+  Building wheel for pyperclip (setup.py) ... done
+  Created wheel for pyperclip: filename=pyperclip-1.8.2-py3-none-any.whl size=11107 sha256=ffd761b9d533932b74806737816b5cf8f4973def248d50fb93d5525689be71ce
+  Stored in directory: /root/.cache/pip/wheels/0c/09/9e/49e21a6840ef7955b06d47394afef0058f0378c0914e48b8b8
+  Building wheel for pyrect (setup.py) ... done
+  Created wheel for pyrect: filename=PyRect-0.1.4-py2.py3-none-any.whl size=9547 sha256=0914528e3eb98bc2efc3045a968932914d295e5b0c8c22d737d629d89c0e31a7
+  Stored in directory: /root/.cache/pip/wheels/0e/d4/c5/b7f7be24ac0a168fd03d08afcc7c8928ef05cc1e319d1c136b
+  Building wheel for python3-Xlib (setup.py) ... done
+  Created wheel for python3-Xlib: filename=python3_xlib-0.15-py3-none-any.whl size=109517 sha256=4ecea8f431bd96e22850c45e47b6ae36106e2216b3023fd004f928ee6fb4b65f
+  Stored in directory: /root/.cache/pip/wheels/e8/f5/f4/4c7032e17a250a7327c4fa4d4807452558e04487c783bcde39
+Successfully built pyautogui pygetwindow pyscreeze PyTweening mouseinfo pymsgbox pyperclip pyrect python3-Xlib
+Installing collected packages: python3-Xlib, pyrect, pyperclip, PyTweening, pyscreeze, pymsgbox, pygetwindow, mouseinfo, pyautogui
+Successfully installed PyTweening-1.0.4 mouseinfo-0.1.3 pyautogui-0.9.53 pygetwindow-0.0.9 pymsgbox-1.0.9 pyperclip-1.8.2 pyrect-0.1.4 pyscreeze-0.1.28 python3-Xlib-0.15
+root@deb11:/home/compacs/Cmp7Data/Automation_test# python3
+Python 3.9.2 (default, Feb 28 2021, 17:03:44) 
+[GCC 10.2.1 20210110] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pyautogui as pag
+NOTE: You must install tkinter on Linux to use MouseInfo. Run the following: sudo apt-get install python3-tk python3-dev
+root@deb11:/home/compacs/Cmp7Data/Automation_test# sudo apt-get install python3-tk python3-dev
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово         
+Уже установлен пакет python3-dev самой новой версии (3.9.2-3).
+python3-dev помечен как установленный вручную.
+Будут установлены следующие дополнительные пакеты:
+  blt libtcl8.6 libtk8.6 tk8.6-blt2.5
+Предлагаемые пакеты:
+  blt-demo tcl8.6 tk8.6 tix python3-tk-dbg
+Следующие НОВЫЕ пакеты будут установлены:
+  blt libtcl8.6 libtk8.6 python3-tk tk8.6-blt2.5
+Обновлено 0 пакетов, установлено 5 новых пакетов, для удаления отмечено 0 пакетов, и 0 пакетов не обновлено.
+Необходимо скачать 2 506 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 9 317 kB.
+Хотите продолжить? [Д/н] y
+Пол:1 http://deb.debian.org/debian bullseye/main amd64 libtcl8.6 amd64 8.6.11+dfsg-1 [1 018 kB]
+Пол:2 http://deb.debian.org/debian bullseye/main amd64 libtk8.6 amd64 8.6.11-2 [780 kB]
+Пол:3 http://deb.debian.org/debian bullseye/main amd64 tk8.6-blt2.5 amd64 2.5.3+dfsg-4.1 [593 kB]
+Пол:4 http://deb.debian.org/debian bullseye/main amd64 blt amd64 2.5.3+dfsg-4.1 [14,9 kB]
+Пол:5 http://deb.debian.org/debian bullseye/main amd64 python3-tk amd64 3.9.2-1 [101 kB]
+Получено 2 506 kB за 1с (1 871 kB/s)  
+Выбор ранее не выбранного пакета libtcl8.6:amd64.
+(Чтение базы данных … на данный момент установлено 163189 файлов и каталогов.)
+Подготовка к распаковке …/libtcl8.6_8.6.11+dfsg-1_amd64.deb …
+Распаковывается libtcl8.6:amd64 (8.6.11+dfsg-1) …
+Выбор ранее не выбранного пакета libtk8.6:amd64.
+Подготовка к распаковке …/libtk8.6_8.6.11-2_amd64.deb …
+Распаковывается libtk8.6:amd64 (8.6.11-2) …
+Выбор ранее не выбранного пакета tk8.6-blt2.5.
+Подготовка к распаковке …/tk8.6-blt2.5_2.5.3+dfsg-4.1_amd64.deb …
+Распаковывается tk8.6-blt2.5 (2.5.3+dfsg-4.1) …
+Выбор ранее не выбранного пакета blt.
+Подготовка к распаковке …/blt_2.5.3+dfsg-4.1_amd64.deb …
+Распаковывается blt (2.5.3+dfsg-4.1) …
+Выбор ранее не выбранного пакета python3-tk:amd64.
+Подготовка к распаковке …/python3-tk_3.9.2-1_amd64.deb …
+Распаковывается python3-tk:amd64 (3.9.2-1) …
+Настраивается пакет libtcl8.6:amd64 (8.6.11+dfsg-1) …
+Настраивается пакет libtk8.6:amd64 (8.6.11-2) …
+Настраивается пакет tk8.6-blt2.5 (2.5.3+dfsg-4.1) …
+Настраивается пакет blt (2.5.3+dfsg-4.1) …
+Настраивается пакет python3-tk:amd64 (3.9.2-1) …
+Обрабатываются триггеры для libc-bin (2.31-13+deb11u2) …
+root@deb11:/home/compacs/Cmp7Data/Automation_test# python3
+Python 3.9.2 (default, Feb 28 2021, 17:03:44) 
+[GCC 10.2.1 20210110] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pyautogui as pag
+>>> pag.position()
+Point(x=0, y=643)
+>>> pag.position()
+Point(x=301, y=43)
+>>> pag.position()
+Point(x=336, y=77)
+>>> pag.position()
+Point(x=134, y=114)
+>>> pag.rightclick(134,114)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'pyautogui' has no attribute 'rightclick'
+>>> pag.rightClick(134,114)
+>>> pag.rightClick(134,114)
+>>> 
+

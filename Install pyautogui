@@ -127,3 +127,6 @@ AttributeError: module 'pyautogui' has no attribute 'rightclick'
 >>> pag.rightClick(134,114)
 >>> 
 
+
+modified
+

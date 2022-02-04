@@ -57,7 +57,7 @@ for i in range(0, len(lst)):
 
       floatTimeEventPrevious = float(rawTimeEvent)
 
-      if(lst[i].__contains__('KeyboardEvent') and lst[i].__contains__('up')):   #('KeyboardEvent(n, up, ', 'time=1611207358.3693032')
+      if(lst[i].__contains__('KeyboardEvent')):   #('KeyboardEvent(n, up, ', 'time=1611207358.3693032')
           lstTmp1 = lst[i].split('time=')
           lstTmp1[1] = lstTmp1[1].replace(')', '')
       #    print(lstTmp1)
@@ -69,7 +69,7 @@ for i in range(0, len(lst)):
           listRawTmpFirstElem = rawTmpFirstElem.split(',')
        #   print(listRawTmpFirstElem[0])
 
-          listAllEvents.append(['KeyboardEvent', listRawTmpFirstElem[0], float(lstTmp1[1])])
+          listAllEvents.append(['KeyboardEvent', listRawTmpFirstElem[0], float(lstTmp1[1]), listRawTmpFirstElem[1]]) # listRawTmpFirstElem[1] = up, down
           #нажимаем клавишу
           # pyautogui.press(listRawTmpFirstElem[0])
           # time.sleep(0.5)
@@ -94,7 +94,7 @@ for i in range(0, len(lst)):
  #         pyautogui.moveTo(int(raw_x), int(raw_y))
  #         #двигаем курсор
 
-      if(lst[i].__contains__('ButtonEvent') and lst[i].__contains__('up')): #("ButtonEvent(event_type='up', button='right', ", 'time=1611223260.7421203')
+      if(lst[i].__contains__('ButtonEvent')): #("ButtonEvent(event_type='up', button='right', ", 'time=1611223260.7421203')
                                               #("ButtonEvent(event_type='up', button='left', ", 'time=1611223266.18212')
           lstTmp3 = lst[i].split('time=')
           lstTmp3[1] = lstTmp3[1].replace(')', '')
@@ -111,12 +111,14 @@ for i in range(0, len(lst)):
           print(buttonType)
 
           if(buttonType.__contains__('right')):
-              listAllEvents.append(['ButtonEvent', 'right', float(lstTmp3[1]) ])
+#              listAllEvents.append(['ButtonEvent', 'right', float(lstTmp3[1]) ])
+               listAllEvents.append([lstTmp3[0], 'right', float(lstTmp3[1])])
               #нажимаем правую клавишу мыши
  #             pyautogui.click(button='right')
 
           if(buttonType.__contains__('left')):
-              listAllEvents.append(['ButtonEvent', 'left', float(lstTmp3[1])])
+#              listAllEvents.append(['ButtonEvent', 'left', float(lstTmp3[1])])
+               listAllEvents.append([lstTmp3[0], 'left', float(lstTmp3[1])])
               #нажимаем левую клавишу мыши
   #            pyautogui.click(button='left')
 
@@ -125,7 +127,10 @@ for i in range(0, len(listAllEvents)):
 
           if (listAllEvents[i][0].__contains__('KeyboardEvent')):
           # нажимаем клавишу
-            pyautogui.press(listAllEvents[i][1])
+             if(listAllEvents[i][3].__contains__('down')):
+                 pyautogui.keyDown(listAllEvents[i][1])
+             else:
+                 pyautogui.keyUp(listAllEvents[i][1])
 
           if (listAllEvents[i][0].__contains__('MoveEvent')):
           # двигаем курсор
@@ -133,12 +138,29 @@ for i in range(0, len(listAllEvents)):
 
           if (listAllEvents[i][0].__contains__('ButtonEvent')):
           #нажимаем правую клавишу мыши
-              if (listAllEvents[1].__contains__('left')):
-                   pyautogui.click(button='right')
-              else:
-                   pyautogui.click(button='left')
+              # if (listAllEvents[i][0].__contains__('left')):
+              # # добавить обработку перетаскивания мышью
+              #
+              #      pyautogui.click(button='left')
+              # else:
+              #      pyautogui.click(button='right')
+              #
+              # time.sleep(1)
 
-              time.sleep(1)
+               if (listAllEvents[i][0].__contains__('left') and listAllEvents[i][0].__contains__('down')):
+                  # добавить обработку перетаскивания мышью !!!
+                  pyautogui.mouseDown(button='left')
+
+               elif (listAllEvents[i][0].__contains__('left') and listAllEvents[i][0].__contains__('up')):
+                  pyautogui.mouseUp(button='left')
+
+               elif (listAllEvents[i][0].__contains__('right') and listAllEvents[i][0].__contains__('down')):
+                  pyautogui.mouseDown(button='right')
+
+               elif (listAllEvents[i][0].__contains__('right') and listAllEvents[i][0].__contains__('up')):
+                  pyautogui.mouseUp(button='right')
+
+               time.sleep(0.5)
 
 #         нажимаем левую клавишу мыши
 #         pyautogui.click(button='left')

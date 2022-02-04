@@ -38,7 +38,7 @@ file_event = open("/home/compacs/Cmp7Data/Automation_test/Python_progs.txt", "w"
 listKeyboardEvent = []
 listMouseEvent = []
 for i in range(0, len(keyboard_events)):
-     if keyboard_events[i].event_type == "up":
+#     if keyboard_events[i].event_type == "up":
           listKeyboardEvent.append("KeyboardEvent(" +
               keyboard_events[i].name + ', ' +
               keyboard_events[i].event_type + ', ' + 'time=' +
